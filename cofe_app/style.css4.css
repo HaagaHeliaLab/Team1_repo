@@ -1,0 +1,33 @@
+
+body{
+background: white;
+display: table;
+}
+
+
+h1{ 
+    padding:  10px;
+    font-size: 25px;
+     font-family: sans-serif;
+     text-align: center;
+}
+
+
+
+
+
+#order{
+    display: block;
+    width: 250px;
+    height: 40px;
+    padding:  10px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: black;
+    outline: none;
+    border:1px solid black;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+

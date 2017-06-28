@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css2.css" />
+</head>
+<body>
+  <!-- main div upper part -->
+    <div class="wrap">
+     <!-- div for coffee images and description -->
+<div class="fleft">  
+<figure>
+    <img src="cup_tile_large.png" alt="Coffee" width="80" height="80">
+   <figcaption>Black coffee</figcaption>
+</figure>
+<figure>
+  <img src="cup_tile_large.png" alt="Tea" width="80" height="80">
+  <figcaption>Hot Tea</figcaption>
+</figure>  
+<figure>
+  <img src="cup_tile_large.png" alt="Cocoa" width="80" height="80">
+  <figcaption>Sweet Milk Cocoa</figcaption>
+</figure>
+</div>
+
+  <!-- main div upper part -->
+ <div class="fcenter">
+
+<label class="switchBtn">
+    <input type="checkbox">
+    <div class="slide round">  <!-- text can be added here --></div>
+</label>
+
+<label class="switchBtn">
+    <input type="checkbox">
+    <div class="slide round"> <!-- text can be added here --></div>
+</label>
+
+<label class="switchBtn">
+    <input type="checkbox">
+    <div class="slide round"> <!-- text can be added here --></div>
+</label>
+</div><!-- end fcenter -->
+
+
+<!-- div for 3 plus minus input buttons -->  
+ <div class="fright">
+<form id='myform' method='POST' action='#'>
+    <input type='button' value='-' class='qtyminus' field='quantity' />
+    <input type='text' name='quantity' value='0' class='qty' />
+    <input type='button' value='+' class='qtyplus' field='quantity' />
+</form>
+
+<form id='myform' method='POST' action='#'>
+    <input type='button' value='-' class='qtyminus' field='quantity' />
+    <input type='text' name='quantity' value='0' class='qty' />
+    <input type='button' value='+' class='qtyplus' field='quantity' />
+</form>
+
+<form id='myform' method='POST' action='#'>
+    <input type='button' value='-' class='qtyminus' field='quantity' />
+    <input type='text' name='quantity' value='0' class='qty' />
+    <input type='button' value='+' class='qtyplus' field='quantity' />
+</form>
+</div><!-- end fright -->
+   
+<!-- lower part app-->  
+<div id="order">
+<form>
+<input type= "button" id="add-btn" value="ADD" />
+</form>
+
+
+<!-- order summary box-->  
+<div id="dialog">
+Summary of your order
+</div>
+
+<form>
+<input type= "button" id="checkout-btn" value="Check Out" />
+</form>
+</div><!--end order div-->  
+
+</body>
+</html>

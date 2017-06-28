@@ -1,0 +1,145 @@
+.wrap {
+    width:670px; 
+    overflow:auto;
+    display: table;
+    margin: 0 auto;
+margin-top: 50px;
+}
+
+.fleft {
+    float:left; 
+    width:200;
+background: white;
+    height: 400px;
+}
+
+.fcenter{
+    float: left;
+    width:220px;
+    background:white;
+    height:400px;
+ 
+}
+
+.fright {
+float:right;
+background:white;
+height: 400px;
+width:250px;   
+}
+
+.switchBtn {
+    position: relative;
+    display: inline-block;
+    width: 110px;
+    height: 34px;
+  margin:17%;
+  padding: 5px;
+}
+
+.switchBtn input {display:none;}
+.slide {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    padding: 8px;
+    color: #fff;
+}
+.slide:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 78px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slide {
+    background-color:#3e4444;
+    padding-left: 40px;
+}
+input:focus + .slide {
+    box-shadow: 0 0 1px #3e4444;
+}
+input:checked + .slide:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+    left: -20px;
+}
+.slide.round {
+    border-radius: 34px;
+}
+.slide.round:before {
+    border-radius: 50%;
+}
+
+
+
+
+#myform {
+    text-align: center;
+    padding: 10px;
+    border: 1px dotted #ccc;
+    margin: 20%;
+}
+.qty {
+    width: 50px;
+    height: 30px;
+    text-align: center;
+}
+input.qtyplus { width:25px; height:25px;}
+input.qtyminus { width:25px; height:25px;}
+
+
+
+#order input{
+    display: block;
+    width: 280px;
+    height: 40px;
+    padding:  10px;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: black;
+    outline: none;
+    border:1px solid black;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#add #add-btn{
+    background:#3e4444;
+    color: white;
+    font-size: 18px;
+    width: 280px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
+}
+
+
+
+@media screen and (max-width: 1000px)
+{
+body
+{background-color: wheat}
+}
+@media only screen and (max-width : 480px)
+{
+body
+{background-color:gray;}
+}
+@media only screen and (max-width : 320px)
+{
+body
+{background-color: ghostwhite;}
+}
